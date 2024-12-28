@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms In Html</title>
-</head>
-<body>
-    <h1>Forms</h1>
-    <form action="forms.js" enctype="multipart/form-data">
-       <div>
-        <label for="email"> Email:</label>
-        <input type="email" id="email" name="email">
-       </div>
-       <br>
-       <div>
-        <label for="email">Name:</label>
-         <input type="text" id="name" name="name">
-       </div>
-       <br>
-       <div>
-        <label for="">Number:</label>
-         <input type="number" name="number">
-       </div><br>
-       <div>
-        <label for="">Date:</label>
-         <input type="date">
-       </div>
-       <br>
-       <div>
-        Date Time Local: <input type="datetime-local">
-       </div>
-       <br>
-       <div>
-        Time: <input type="time">
-       </div>
-       <br>
-       <div>
-        Tel: <input type="tel">
-       </div>
-       <br>
-       <div>
-        Textarea: <br> <textarea cols="90" rows="10"></textarea>
-       </div>
-       <br>
 
-       <div>
-        <label for="Male">Male</label>
-        <input type="radio" name="gender" id="Male">
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female">
-        <label for="others">Others</label>
-        <input type="radio" name="gender" id="others">
-       </div>
-       <br>
-       <div>
-        <label for=""></label>
-        <input type="checkbox">
-       </div>
-       <div>
-        <input type="file" accept="image/*">
-       </div>
-       <br>
-       <div>
-        <select name="car" id="car">
-            <option value="car">Car1</option>
-            <option value="car2">Car2</option>
-            <option value="ca3">Car3</option>
-        </select>
-       </div>
-       <br>
-       <div>
-        <!-- <input type="submit" value="Submit">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms In Html</title>
+</head>
+
+<body>
+  <h1>Forms</h1>
+  <form action="forms.js" enctype="multipart/form-data">
+    <div>
+      <label for="email"> Email:</label>
+      <input type="email" id="email" name="email" pattern="[A-za-z]">
+    </div>
+    <br>
+    <div>
+      <label for="email">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <br>
+    <div>
+      <label for="">Number:</label>
+      <input type="number" name="number" readonly>
+    </div><br>
+    <div>
+      <label for="">Date:</label>
+      <input type="date" min="2000-01-01">
+    </div>
+    <br>
+    <div>
+      Date Time Local: <input type="datetime-local">
+    </div>
+    <br>
+    <div>
+      Time: <input type="time">
+    </div>
+    <br>
+    <div>
+      Tel: <input type="tel">
+    </div>
+    <br>
+    <div>
+      Range: <input type="range" min="1" max="100" step="10">
+    </div>
+    <br>
+    <div>
+      password: <input type="password" >
+    </div>
+    <br>
+    <div>
+      Color: <input type="color" >
+    </div>
+    <br>
+    <!-- <div>
+      Textarea: <br> <textarea cols="90" rows="10"></textarea>
+    </div>
+    <br>
+
+    <div>
+      <label for="Male">Male</label>
+      <input type="radio" name="gender" id="Male">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female">
+      <label for="others">Others</label>
+      <input type="radio" name="gender" id="others">
+    </div>
+    <br>
+    <div>
+      <label for=""></label>
+      <input type="checkbox">
+    </div>
+    <div>
+      <input type="file" accept="image/*">
+    </div>
+    <br>
+    <div>
+      <select name="car" id="car">
+        <option value="car">Car1</option>
+        <option value="car2">Car2</option>
+        <option value="ca3">Car3</option>
+      </select>
+    </div>
+    <br> -->
+    <div>
+      <!-- <input type="submit" value="Submit">
         <input type="reset"> -->
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-       </div>
-    </form>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
 </body>
+
 </html>
