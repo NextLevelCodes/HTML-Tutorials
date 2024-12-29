@@ -9,15 +9,15 @@
 
 <body>
   <h1>Forms</h1>
-  <form action="forms.js" enctype="multipart/form-data">
+  <form action="forms.js" method="post" enctype="multipart/form-data">
     <div>
       <label for="email"> Email:</label>
-      <input type="email" id="email" name="email" pattern="[A-za-z]">
+      <input type="email" id="email" name="email" >
     </div>
     <br>
     <div>
       <label for="email">Name:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" required minlength="2" maxlength="6" disabled>
     </div>
     <br>
     <div>
@@ -26,7 +26,7 @@
     </div><br>
     <div>
       <label for="">Date:</label>
-      <input type="date" min="2000-01-01">
+      <input type="date" min="2000-01-01"  disabled>
     </div>
     <br>
     <div>
@@ -84,9 +84,9 @@
     </div>
     <br> -->
     <div>
-      <!-- <input type="submit" value="Submit">
-        <input type="reset"> -->
-      <button type="submit">Submit</button>
+      <input type="submit" value="Submit" disabled>
+        <input type="reset">
+      <button type="submit" disabled>Submit</button>
       <button type="reset">Reset</button>
     </div>
   </form>
